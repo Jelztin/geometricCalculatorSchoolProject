@@ -16,5 +16,10 @@ namespace GeometricCalculator
         {
             InitializeComponent();
         }
+
+        private void FigureTypeSelector_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

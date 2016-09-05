@@ -18,24 +18,14 @@ namespace GeometricCalculator
             this.v3 = v3;
         }
 
-        public string getArea()
-        {
-            return (v1 * v2).ToString();
-        }
-
-        public string getEdgeLegnth()
-        {
-            return ((v1 + v2 + v3) * 2).ToString();
-        }
-
-        public string getSurfaceArea()
+        override public string getSurfaceArea()
         {
             return ((v1 * v2 + v2 * v3 + v1 * v3)*2).ToString();
         }
 
-        public string getVolume()
+        override public string getVolume()
         {
-            throw new NotImplementedException();
+            return (v1 * v2 * v3).ToString();
         }
     }
 }

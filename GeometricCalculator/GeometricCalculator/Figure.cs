@@ -1,12 +1,26 @@
-﻿namespace GeometricCalculator
+﻿using System;
+
+namespace GeometricCalculator
 {
-    public interface Figure
+    public class Figure
     {
 
-        string getArea();
-        string getVolume();
-        string getSurfaceArea();
-        string getEdgeLegnth();
+        virtual public string getArea()
+        {
+            throw new NotSupportedException("invalid type of operation on figure");
+        }
+        virtual public string getVolume()
+        {
+            throw new NotSupportedException("invalid type of operation on figure");
+        }
+        virtual public string getSurfaceArea()
+        {
+            throw new NotSupportedException("invalid type of operation on figure");
+        }
+        virtual public string getEdgeLegnth()
+        {
+            throw new NotSupportedException("invalid type of operation on figure");
+        }
 
     }
 }

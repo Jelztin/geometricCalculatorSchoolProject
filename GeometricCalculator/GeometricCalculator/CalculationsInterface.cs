@@ -9,7 +9,6 @@ namespace GeometricCalculator
     public interface CalculationsInterface
     {
         
-
-        string calculateResult(Figure figure, OperationType operationType);
+        string calculateResult(Figure figure, OperationType.operationType operationType);
     }
 }
